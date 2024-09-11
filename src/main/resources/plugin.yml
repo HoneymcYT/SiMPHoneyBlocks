@@ -1,0 +1,9 @@
+name: SiMPHoneyBlocks
+version: '1.0-SNAPSHOT.SiMPHoneyBlocks'
+main: de.simpmc.siMPHoneyBlocks.SiMPHoneyBlocks
+api-version: '1.20'
+prefix: Honeyistcool
+load: STARTUP
+authors: [ Honey der Gstar xD ]
+description: SiMPMC.DE
+website: simpmc.de
