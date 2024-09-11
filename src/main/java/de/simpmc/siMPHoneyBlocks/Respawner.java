@@ -4,9 +4,10 @@ import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockBreakEvent;
+import org.bukkit.plugin.Plugin;
 import org.bukkit.scheduler.BukkitRunnable;
 
-public class Respawner implements Listener {
+public class Respawner implements Listener, RespawnerSiMP {
 
 
     @Override
@@ -18,7 +19,7 @@ public class Respawner implements Listener {
             public void run() {
                 block.setType(Material.HONEY_BLOCK);
             }
-        }.runTaskLater(this, 100);
+        }.runTaskLater((Plugin) this, 100);
 
     }
 }
